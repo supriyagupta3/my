@@ -1,59 +1,7 @@
-/* ====== GENERAL ====== */
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #fffaf5;
-    color: #333;
-    line-height: 1.6;
-}
-
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    color: #3b2f2f;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* ====== NAVBAR ====== */
-.navbar {
-    background-color: #fff;
-    border-bottom: 1px solid #e6d5b8;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 4rem;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.logo h2 {
-    font-weight: 700;
-    color: #c6a664;
-}
-.logo span {
-    color: #a57c00;
-}
-
-nav a {
-    margin-left: 2rem;
-    font-weight: 500;
-    color: #555;
-    transition: color 0.3s;
-}
-
-nav a.active,
-nav a:hover {
-    color: #c6a664;
-}
-
 /* ====== HERO ====== */
 .hero {
-    background: url('https://images.unsplash.com/photo-1516637090014-cb1ab0d08fc7?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-    height: 85vh;
+    background: url('images/diamond-necklace.jpg') center/cover no-repeat;
+    height: 70vh; /* Reduced from 85vh for a more compact look */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,140 +19,31 @@ nav a:hover {
 
 .hero-content {
     position: relative;
-    max-width: 700px;
-    padding: 2rem;
+    max-width: 650px; /* slightly narrower */
+    padding: 1rem;   /* reduced padding */
     animation: fadeIn 1.5s ease;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 2.5rem; /* slightly smaller heading */
+    margin-bottom: 0.8rem; /* tighter spacing */
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.4; /* slightly tighter */
+    margin-bottom: 1.5rem; /* reduced spacing below text */
 }
 
 .cta-button {
     background-color: #c6a664;
     color: white;
-    padding: 0.8rem 2rem;
-    border-radius: 30px;
+    padding: 0.7rem 1.8rem; /* smaller button */
+    border-radius: 25px;
     font-weight: bold;
     transition: background-color 0.3s;
 }
+
 .cta-button:hover {
     background-color: #a57c00;
-}
-
-/* ====== CONTAINER ====== */
-.container {
-    padding: 4rem 10%;
-}
-
-/* ====== INTRO ====== */
-.intro {
-    text-align: center;
-    margin-bottom: 4rem;
-}
-.intro span {
-    color: #c6a664;
-}
-
-/* ====== JEWELRY SECTIONS ====== */
-.jewelry-section {
-    margin-bottom: 4rem;
-}
-
-.jewelry-section h2 {
-    text-align: center;
-    margin-bottom: 0.5rem;
-    color: #3b2f2f;
-}
-.jewelry-section p {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto 2rem;
-    color: #555;
-}
-
-.jewelry-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 2rem;
-}
-
-.jewelry-item {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    text-align: center;
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-.jewelry-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
-}
-
-.jewelry-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.jewelry-item h3 {
-    margin: 1rem 0 0.3rem;
-}
-
-.price {
-    color: #a57c00;
-    font-weight: 600;
-}
-
-.btn {
-    display: inline-block;
-    margin: 1rem 0 1.5rem;
-    padding: 0.6rem 1.4rem;
-    background-color: #c6a664;
-    color: white;
-    border-radius: 25px;
-    font-weight: 500;
-    transition: background 0.3s;
-}
-.btn:hover {
-    background-color: #a57c00;
-}
-
-/* ====== FOOTER ====== */
-footer {
-    background-color: #3b2f2f;
-    color: #f5f5f5;
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 0.9rem;
-}
-
-footer a {
-    color: #c6a664;
-}
-
-/* ====== ANIMATIONS ====== */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* ====== RESPONSIVE ====== */
-@media (max-width: 768px) {
-    .navbar {
-        padding: 1rem 2rem;
-    }
-    .hero h1 {
-        font-size: 2.2rem;
-    }
-    .cta-button {
-        padding: 0.7rem 1.6rem;
-    }
 }
